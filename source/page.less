@@ -1,184 +1,185 @@
-            .page-banner {
-            background-color: @brand-8-lighter;
-            margin: -20px -10px;
-            border-top: 15px solid @brand-8;
-            border-bottom: 15px solid @brand-8;
-            padding: 20px @margin-left-text;
-            color: white;
-            text-shadow: @text-shadow;
-            h1 {
-                font-weight: bold;
-                font-size: 36px;
-            }
-            p {
-                font-size: 22px;
-                font-weight: 400;
-                margin-top: 0;
-            }
-        }
-
-        .well {
-            background-color: @panal-bg;
-            text-align: left;
-        }
-
-        .well,
-        .inner_content_block {
-            margin: 15px @margin-horiz;
-            padding: 20px @margin-horiz;
-        }
-
-        .inner_content_block.dark_background {
-            color: white;
-        }
-
-        .wide_box {
-            margin: 0 -@margin-horiz;
-        }
-
-        p.big-text {
-            font-size: 22px;
-            font-weight: 600;
-        }
-
-        .dark_background {
-            background-color: @dark-background;
-            blockquote {
-                background-image: url('@{images}/quotes_left_white.png'),
-                url('@{images}/quotes_right_white.png');
-            }
-            > ul.alternative li {
-                background: url('@{images}/bullet_arrow_white.png') left center / 27px no-repeat;
-            }
-        }
-
-        blockquote {
-            background-image: url('@{images}/quotes_left_grey.png'),
-            url('@{images}/quotes_right_grey.png');
-            background-position: left top, right bottom;
-            background-repeat: no-repeat, no-repeat;
-            padding: 34px 80px;
-            border: none;
-            min-height: 58px;
-            display: inline-block;
-            margin: 20px 0;
-            font-weight: bold;
-            font-style: italic;
-        }
-
-        ul.alternative {
-            margin: 20px;
-            list-style: none;
-            li {
-                background: url('@{images}/bullet_arrow_grey.png') left center / 27px no-repeat;
-                padding: 20px 20px 20px 44px;
-                font-weight: 400;
-                margin-bottom: 10px;
-            }
-        }
-
-        a.pin {
-            background-color: white;
-            background-image: url('@{images}/pip_spriteMap.png');
-            background-repeat: no-repeat;
-            background-position: center top;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            .box-shadow(@global_interact_shadow);
-            margin: 20px auto;
-            display: inline-block;
-            position: absolute;
-            &:hover {
-                background-position: center bottom;
-            }
-            .pin_text {
-                display: none;
-            }
-        }
-
-        .pin_canvas {
-            position: relative;
-            width: 680px;
-            height: 470px;
-        }
-
-        .circular_image {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            text-align: center;
-            .box-shadow(@global_interact_shadow);
-            text-decoration: none;
-            margin: 20px auto;
-            background-color: grey;
-        }
-
-        .nested_box {
-            padding: @margin-horiz;
-            h2,
-            h3,
-            h4 {
-                margin: 4px 0;
-            }
-        }
-
-        .content_box_no_margin {
-            margin-top: -25px;
-        }
-
-        .warning_icon {
-            background-image: url('@{images}/icon_warning.png');
-            background-position: top 10px right 20px;
-            background-repeat: no-repeat;
-            background-size: 128px;
-            padding-left: 170px;
-        }
-
-        ul.info_list {
-            list-style: none;
-            margin: 20px 0;
-            li {
-                border-left: 70px @brand-1 solid;
-                border-radius: 10px;
-                padding: 20px;
-                background-color: white;
-                margin: 10px 0;
-                font-size: 22px;
-                font-weight: 600;
-                position: relative;
-                &::after {
-                    content: 'i';
-                    font-size: 60px;
-                    position: absolute;
-                    left: -42px;
+                    .page-banner {
+                    background-color: @brand-8-lighter;
+                    margin: -20px -10px;
+                    border-top: 15px solid @brand-8;
+                    border-bottom: 15px solid @brand-8;
+                    padding: 20px @margin-left-text;
                     color: white;
-                    top: -11px;
+                    text-shadow: @text-shadow;
+                    h1 {
+                        font-weight: bold;
+                        font-size: 36px;
+                    }
+                    p {
+                        font-size: 22px;
+                        font-weight: 400;
+                        margin-top: 0;
+                    }
                 }
-            }
-        }
 
-        .well.info::after {
-            content: 'i';
-            font-size: 50px;
-            top: 10px;
-            left: -42px;
-            position: absolute;
-            font-weight: 600;
-            color: white;
-        }
+                .well {
+                    background-color: @panal-bg;
+                    text-align: left;
+                }
 
-        .well.info {
-            /* padding-left: 80px; */
-            border-left: @brand-2 solid 70px;
-            border-top: none;
-            border-bottom: none;
-            position: relative;
-            border-radius: 10px;
-        }
+                .well,
+                .inner_content_block {
+                    margin: 15px @margin-horiz;
+                    padding: 20px @margin-horiz;
+                }
 
-        .well.new {
-            /*merging to second branch
+                .inner_content_block.dark_background {
+                    color: white;
+                }
+
+                .wide_box {
+                    margin: 0 -@margin-horiz;
+                }
+
+                p.big-text {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+                .dark_background {
+                    background-color: @dark-background;
+                    blockquote {
+                        background-image: url('@{images}/quotes_left_white.png'),
+                        url('@{images}/quotes_right_white.png');
+                    }
+                    > ul.alternative li {
+                        background: url('@{images}/bullet_arrow_white.png') left center / 27px no-repeat;
+                    }
+                }
+
+                blockquote {
+                    background-image: url('@{images}/quotes_left_grey.png'),
+                    url('@{images}/quotes_right_grey.png');
+                    background-position: left top, right bottom;
+                    background-repeat: no-repeat, no-repeat;
+                    padding: 34px 80px;
+                    border: none;
+                    min-height: 58px;
+                    display: inline-block;
+                    margin: 20px 0;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+
+                ul.alternative {
+                    margin: 20px;
+                    list-style: none;
+                    li {
+                        background: url('@{images}/bullet_arrow_grey.png') left center / 27px no-repeat;
+                        padding: 20px 20px 20px 44px;
+                        font-weight: 400;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                a.pin {
+                    background-color: white;
+                    background-image: url('@{images}/pip_spriteMap.png');
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    .box-shadow(@global_interact_shadow);
+                    margin: 20px auto;
+                    display: inline-block;
+                    position: absolute;
+                    &:hover {
+                        background-position: center bottom;
+                    }
+                    .pin_text {
+                        display: none;
+                    }
+                }
+
+                .pin_canvas {
+                    position: relative;
+                    width: 680px;
+                    height: 470px;
+                }
+
+                .circular_image {
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 50%;
+                    text-align: center;
+                    .box-shadow(@global_interact_shadow);
+                    text-decoration: none;
+                    margin: 20px auto;
+                    background-color: grey;
+                }
+
+                .nested_box {
+                    padding: @margin-horiz;
+                    h2,
+                    h3,
+                    h4 {
+                        margin: 4px 0;
+                    }
+                }
+
+                .content_box_no_margin {
+                    margin-top: -25px;
+                }
+
+                .warning_icon {
+                    background-image: url('@{images}/icon_warning.png');
+                    background-position: top 10px right 20px;
+                    background-repeat: no-repeat;
+                    background-size: 128px;
+                    padding-left: 170px;
+                }
+
+                ul.info_list {
+                    list-style: none;
+                    margin: 20px 0;
+                    li {
+                        border-left: 70px @brand-1 solid;
+                        border-radius: 10px;
+                        padding: 20px;
+                        background-color: white;
+                        margin: 10px 0;
+                        font-size: 22px;
+                        font-weight: 600;
+                        position: relative;
+                        &::after {
+                            content: 'i';
+                            font-size: 60px;
+                            position: absolute;
+                            left: -42px;
+                            color: white;
+                            top: -11px;
+                        }
+                    }
+                }
+
+                .well.info::after {
+                    content: 'i';
+                    font-size: 50px;
+                    top: 10px;
+                    left: -42px;
+                    position: absolute;
+                    font-weight: 600;
+                    color: white;
+                }
+
+                .well.info {
+                    /* padding-left: 80px; */
+                    border-left: @brand-2 solid 70px;
+                    border-top: none;
+                    border-bottom: none;
+                    position: relative;
+                    border-radius: 10px;
+                }
+
+                .well.new {
+                    /*merging to second branch
     second-branch-1
-        no whitespace
+        no whitespace - again...
+                123
 }
